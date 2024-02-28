@@ -15,7 +15,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/14.4.1/data/pt_BR/champion.json')
 
       const champion = champions[id];
       const listItem = document.createElement('li');
-      listItem.textContent = `${champion.id}: ${champion.name}`;
+      listItem.textContent = ` ${champion.name}`;//${champion.id}:
       championList.appendChild(listItem);
 
     }

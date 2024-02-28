@@ -2,10 +2,31 @@
     width: auto;
     height: 73px;
     display: flex;
-    justify-items: center;
+    margin: auto;
+    justify-content: center;
     align-items: center;
     padding: auto;
+    gap: 650px;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
     gap: 32px;
-    color: white;
+}
 
+.logo-img{
+    cursor: url('../img/cursor-pointer.png'), auto;
+    height: 40px;
+
+}
+button{
+    background-color: transparent;
+    border-radius: 12px;
+    width: 120px;
+    height: 34px;
+}
+a{
+    width: 126px;
+    color: white;
 }
