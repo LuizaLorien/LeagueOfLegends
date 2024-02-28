@@ -1,0 +1,24 @@
+@import url(../fonts.css);
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+@font-face {
+  font-family: 'BeaufortforLOL-Regular';
+  src: url('fonts/BeaufortforLOL-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.championName {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: 'BeaufortforLOL-Regular';
+  }
