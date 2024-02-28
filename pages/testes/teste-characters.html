@@ -64,20 +64,20 @@
         // Loop through each champion and create a list item for each one
         for (const id in champions) {
           const champion = champions[id];
-          const listItem = document.createElement('li');
-          listItem.className = 'championContainer';
+          const listaritem = document.createElement('li');
+          listaritem.className = 'championContainer';
 
           // Create an image element for the champion's splash art
           const championImage = document.createElement('img');
           championImage.className = 'championImage';
-          championImage.src = `https://ddragon.leagueoflegends.com/cdn/14.4.1/img/champion/${champion.image.full}`;
-          listItem.appendChild(championImage);
+          championImage.src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`;
+          listaritem.appendChild(championImage);
 
           // Create a div element for the champion's name
           const championName = document.createElement('div');
           championName.className = 'championName';
           championName.textContent = champion.name;
-          listItem.appendChild(championName);
+          listaritem.appendChild(championName);
 
           // Create a link to the champion's CSS file
           const championLink = document.createElement('link');
@@ -85,7 +85,7 @@
           championLink.href = `https://example.com/champion-styles/${champion.id}.css`;
           document.head.appendChild(championLink);
 
-          championList.appendChild(listItem);
+          championList.appendChild(listaritem);
         }
 
         // Add the champion list to the page

@@ -84,7 +84,7 @@
 }
 @font-face{
   font-family:"BeaufortforLOL-Medium";
-  src:url("Fonts/BeaufortforLOL-Medium.eot?#iefix")url("Fonts/BeaufortforLOL-Medium.woff") format("woff"),url("Fonts/BeaufortforLOL-Medium.ttf") format("truetype"),url("Fonts/BeaufortforLOL-Medium.ttf#") format("ttf");
+  src:url("Fonts/BeaufortforLOL-Medium.woff") format("woff"),url("Fonts/BeaufortforLOL-Medium.ttf") format("truetype"),url("Fonts/BeaufortforLOL-Medium.ttf#") format("ttf");
 }
 /* Beaufort for LOL Medium Italic */
 @font-face{

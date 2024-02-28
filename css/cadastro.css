@@ -2,19 +2,6 @@
 @import url(./navbar.css);
 @import url(./main.css);
 
-*{
-    box-sizing: border-box;
-    margin: auto;
-}
-body {
-    cursor: url('../img/cursor.png'), auto;
-    background: rgb(9, 20, 40);
-    background: linear-gradient(to bottom, rgb(9, 20, 40), rgb(3, 151, 171));
-    background: fixed;
-}
-
-a{
-    text-decoration: none;
-    cursor: url('../img/cursor-pointer.png'), auto;
-
+body{
+    background-color: rgb(9, 20, 40);
 }

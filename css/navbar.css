@@ -1,12 +1,13 @@
 .navbar{
     width: auto;
-    height: 73px;
+    height: 70px;
     display: flex;
     margin: auto;
     justify-content: center;
     align-items: center;
     padding: auto;
     gap: 650px;
+    border-bottom: 1px solid white;
 }
 .navbar ul{
     display: flex;
@@ -22,11 +23,14 @@
 }
 button{
     background-color: transparent;
+    border: 1.5px solid #0397AB;
     border-radius: 12px;
     width: 120px;
     height: 34px;
 }
+
 a{
+    font-family: "BeaufortforLOL-Medium";
     width: 126px;
     color: white;
 }
