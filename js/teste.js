@@ -6,20 +6,15 @@ fetch('https://ddragon.leagueoflegends.com/cdn/14.4.1/data/pt_BR/champion.json')
     let filteredChampions = [];
 
     const championFilterButton = document.getElementById('championFilter');
-championFilterButton.addEventListener('click', () => {
-  const searchTerm = document.getElementById('championSearch').value.toLowerCase();
-  const selectedTags = document.querySelectorAll('input[name="championTag"]:checked');
-  filteredChampions = [];
+    championFilterButton.addEventListener('click', () => {
+    const searchTerm = document.getElementById('championSearch').value.toLowerCase();
+    const selectedTags = document.querySelectorAll('input[name="championTag"]:checked');
+    filteredChampions = [];
 
   for (const championId in champions) {
-    const champion = champions[championId];
-    const championTags = champion.tags;
+      const champion = champions[championId];
 
-    if (
-      (!searchTerm || champion.name.toLowerCase().includes(searchTerm)) &&
-      selectedTags.length === 0 ||
-      selectedTags.some(tag => championTags.includes(tag.value))
-    ) {
+  if ((!searchTerm || champion.name.toLowerCase().includes(searchTerm)) && selectedTags.length === 0 || selectedTags.some(tag => championTags.includes(tag.value))) {
       filteredChampions.push(champion);
     }
   }

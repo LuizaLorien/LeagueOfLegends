@@ -6,7 +6,8 @@
     margin: auto;
 }
 body{
-    max-width: 1440px;
+    max-width: 1340px;
+    max-height: auto;
     font-family: "Beaufort for LOL";
     font-style: bold;
     cursor: url('../img/cursor.png'), auto;
@@ -17,7 +18,61 @@ a{
     color: white;
     cursor: url('../img/cursor-pointer.png'), auto;
 }
-#championData li{
+.span-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "BeaufortforLOL-BoldItalic";
+    font-size: 60px;
+    height: 300px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.titulo1{
+    margin-bottom: 0px;
+}
+#hrtitulo{
+    width: 700px;
+    height: 68px;
+    margin-top: 0px;
+}
+
+.navcharacters {
+    color: #ffffff;
+    background-color: rgb(7, 15, 32);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1057px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(200, 156, 62);
+}
+#searchInput {
+    font-family: "BeaufortforLOL-Medium";
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid  rgb(0, 141, 154) ;
+}
+#searchButton{
+    font-family: "BeaufortforLOL-Medium";
+    background-color: rgb(0, 141, 154);
+    border: none;
+    width: auto;
+    height: 25px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 500ms;
+}
+#searchButton:hover{
+    background-color: rgb(200, 156, 62);
+}
+
+#championData ul{
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -25,7 +80,43 @@ a{
     padding-inline-start: 0px;
     padding: 0px;
     margin: auto;
+    margin-top: 30px;
 }
-.championContainer li{
+.championContainer {
+    display: flex;
+    flex-wrap: wrap;
     width: 200px;
+    height: 280px;
+    margin: 15px;
+    transform: scale3d(1.05, 1.05, 1);
+    transition: transform 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;  
+}
+.championContainer:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale3d(1.001, 1.001, 1);
+    cursor: url('../img/cursor-pointer.png'), auto;
+}
+.championimg{
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    height: 300px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.championName {
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    font-family: "BeaufortforLOL-Regular";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(9, 12, 19);
+    color: #fff;
+    padding: 5px 10px;
+    text-align: left;
 }

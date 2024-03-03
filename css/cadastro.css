@@ -1,8 +1,7 @@
 @import url(./fonts.css);
 @import url(./navbar.css);
-@import url(./main.css);
 
-*{
+* {
     box-sizing: border-box;
     margin: auto;
 }
@@ -15,8 +14,96 @@ body {
     background-color: rgb(9, 20, 40);
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     cursor: url('../img/cursor-pointer.png'), auto;
+}
+
+#championData {
+    max-width: 200px;
+    list-style: none;
+    padding: 0;
+}
+
+.championContainer {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    text-align: left;
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: scale3d(1.05, 1.05, 1);
+    transition: transform 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;  
+}
+
+.championContainer:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale3d(1.001, 1.001, 1);
+    cursor: url('../img/cursor-pointer.png'), auto;
+}
+
+.championimg {
+    object-fit: cover;
+    object-position: center;
+    height: 200px;
+    width: 100%;
+    margin: 0px;
+}
+
+.championName {
+    font-family: "BeaufortforLOL-Regular";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.41);
+    color: #fff;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+#searchButton {
+    width: 90px;
+    height: 27px;
+}
+
+.championNameprocurar {
+    font-family: "BeaufortforLOL-MediumItalic";
+    width: 20px;
+    border-radius: 5px;
+}
+
+.navcharacters {
+    font-family: "BeaufortforLOL-Medium";
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.span-mid {
+    display: flex;
+    flex-direction: column; /* Alteração para empilhar os itens verticalmente */
+    justify-content: center;
+    align-items: center;
+    font-family: "BeaufortforLOL-BoldItalic";
+    font-size: 60px;
+    height: 300px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.titulo1 {
+    margin-bottom: 0px;
+}
+
+.hrlol {
+    width: 700px;
+    margin-top: 0;
 }
