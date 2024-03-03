@@ -1,88 +1,31 @@
 @import url(./fonts.css);
 @import url(./navbar.css);
-@import url(./main.css);
 
-
-#championData {
-    display: flex;
-    grid-column: auto;
-    max-width: 200px;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+*{
+    box-sizing: border-box;
     margin: auto;
 }
-
-.championContainer {
-    display: flex;
-    width: 300px;
-    height: 400px;
-    text-align: left;
-    margin: 10px;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    overflow: hidden;
-    transform: scale3d(1.05, 1.05, 1);
-    transition: transform 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;  
+body{
+    max-width: 1440px;
+    font-family: "Beaufort for LOL";
+    font-style: bold;
+    cursor: url('../img/cursor.png'), auto;
+    background-color: rgb(9, 20, 40);   
 }
-.containercharacter {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.championContainer:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    transform: scale3d(1.001, 1.001, 1);
+a{
+    text-decoration: none;
+    color: white;
     cursor: url('../img/cursor-pointer.png'), auto;
 }
-
-.championimg {
-    object-fit: cover;
-    object-position: center;
-    height: 200px;
-    width: 100%;
-    margin: 0px;
-}
-
-.championName {
-    font-family: "BeaufortforLOL-Regular";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.41);
-    color: #fff;
-    padding: 5px 10px;
-    text-align: left;
-}
-.championNameprocurar{
-    font-family:"BeaufortforLOL-MediumItalic";
-    margin: 20px;
-    width: 120px;
-    border-radius: 5px;
-}
-.procurarButton{
-    font-family:"BeaufortforLOL-Medium";
-    color: #ffffff;
-}
-.span-mid {
+#championData li{
     display: flex;
-    flex-direction: column; /* Alteração para empilhar os itens verticalmente */
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    font-family: "BeaufortforLOL-BoldItalic";
-    font-size: 60px;
-    height: 300px;
-    margin-bottom: 10px;
-    background-color: #ffffff;
+    padding-inline-start: 0px;
+    padding: 0px;
+    margin: auto;
 }
-.titulo1{
-    margin-bottom: 0px;
-}
-.hrlol {
-    width: 700px;
-    margin-top: 0;
+.championContainer li{
+    width: 200px;
 }
