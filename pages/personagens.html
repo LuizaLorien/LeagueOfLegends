@@ -10,9 +10,8 @@
     <header>
         <nav class="navbar">
             <a href="../index.html">
-                <img src="../img/lol-logo.png" class="logo-img">
+                <img src="../img/lol-logocopy.png" class="logo-img">
             </a>
-            <div>
                 <ul>
                     <li>
                     <a class="nav-link" href="#OJOGO">
@@ -27,19 +26,32 @@
                     <a class="nav-link" href="#MIDIA"><p>MÍDIA</p></a>
                     </li>
                     <li>
-                        <button><a class="nav-link" href="./pages/login.html"><p>LOGIN</p></a></button>
+                        <button><a class="nav-link" href="./login.html"><p>LOGIN</p></a></button>
                     </li>
                 </ul>
-            </div>
         </nav>
     </header>   
     <main>
-        <section>
-            <div class="style__Wrapper-sc-z8uljj-0 style__ResponsiveWrapper-sc-z8uljj-12 jSwdZF bHJLeL"></div>
+        <div class="span-mid">
+            <span class="titulo1">ESCOLHA SEU CAMPEÃO</span>
+            <img class="hrlol" src="../img/decorator-hr.png" alt="">
+        </div>
+        <section class="filtersearch">
+            <div id="buscar">
+                <input type="text" class="championNameprocurar" placeholder="Buscar">
+                <button class="procurarButton">Pesquisar</button>    
+            </div> 
+            <div class="championTags">
+                <input type="radio" name="championTag" id="assassinos" value="Assassinos" checked>
+                <label for="assassinos">Assassinos</label>
+                <input type="radio" name="championTag" id="lutadores" value="Lutadores">
+                <label for="lutadores">Lutadores</label>
+                <input type="radio" name="championTag" id="magos" value="Magos">
+                <label for="magos">Magos</label>
+                <input type="radio" name="championTag" id="atiradores" value="Atiradores">
+                <
         </section>
-        <h1>ESCOLHA SEU</h1>
-          <h1>CAMPEÃO</h1> 
-    <div id="championData"></div>
+    <div class="containercharacter" id="championData"></div>
     </main>
 
     <script src="../js/modules/champions.js"></script>

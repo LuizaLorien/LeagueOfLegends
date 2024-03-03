@@ -4,19 +4,16 @@
 }
 
 body {
+    max-width: 1300px;
     font-family: "Beaufort for LOL";
     font-style: bold;
     cursor: url('../img/cursor.png'), auto;
-    background: linear-gradient(to bottom, rgb(9, 20, 40), rgb(3, 151, 171));
+    background-color: rgb(9, 20, 40);
 }
 
 a{
     text-decoration: none;
     color: white;
     cursor: url('../img/cursor-pointer.png'), auto;
-
 }
 
-.container{
-    background-color: white;
-}
