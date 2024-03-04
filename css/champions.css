@@ -5,6 +5,9 @@
     box-sizing: border-box;
     margin: auto;
 }
+main{
+    background-color: linear-gradient(rgb(9,20,40), rgb(0, 141, 154));
+}
 body{
     max-width: 1340px;
     max-height: auto;
@@ -26,40 +29,66 @@ a{
     font-family: "BeaufortforLOL-BoldItalic";
     font-size: 60px;
     height: 300px;
+    width: fit-content;
+    width: 100%;
+    margin: 0;
     margin-bottom: 10px;
     background-color: white;
 }
 .titulo1{
-    margin-bottom: 0px;
+    position: absolute;
+    margin-bottom: 70px;
 }
 #hrtitulo{
+    position: absolute;
     width: 700px;
     height: 68px;
-    margin-top: 0px;
+    margin-top: 70px;
 }
+.bannerCharacter{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 100%;
+    background-image: url('img/banner-season.jpg');
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 
+
+}
 .navcharacters {
     color: #ffffff;
-    background-color: rgb(7, 15, 32);   
+    background-color: rgb(3, 0, 35);   
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1057px;
+    width: 500px;
     border-radius: 5px;
     border: 1.5px solid rgb(200, 156, 62);
+    gap: 200px;
 }
 #searchInput {
     font-family: "BeaufortforLOL-Medium";
     width: 100px;
     height: 25px;
-    border-radius: 5px;
     background-color: transparent;
     color: white;
-    border: 2px solid  rgb(0, 141, 154) ;
+    border-bottom: 2px solid rgb(200, 156, 62);
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    transition: 500ms;
+}
+#searchInput:hover{
+    border-bottom: 2px solid  rgb(0, 141, 154);
 }
 #searchButton{
     font-family: "BeaufortforLOL-Medium";
-    background-color: rgb(0, 141, 154);
+    background-color: rgb(200, 156, 62);
     border: none;
     width: auto;
     height: 25px;
@@ -68,9 +97,20 @@ a{
     transition: 500ms;
 }
 #searchButton:hover{
-    background-color: rgb(200, 156, 62);
+    background-color: rgb(0, 141, 154);
 }
+.filtro{
+    font-family: "BeaufortforLOL-Medium";
+    background-color:rgb(200, 156, 62) ;
+    border: transparent;
+    border-radius: 5px;
+    height: 25px;
+    transition: 500ms;
+}
+.filtro:hover{
+    background-color: rgb(0, 141, 154);
 
+}
 #championData ul{
     list-style: none;
     display: flex;

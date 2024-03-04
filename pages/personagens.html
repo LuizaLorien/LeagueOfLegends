@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Campeões</title>
     <link rel="stylesheet" href="../css/champions.css"> 
 </head>
 <body>
@@ -25,25 +25,35 @@
                     <li>
                         <button><a class="nav-link" href="./login.html"><p>LOGIN</p></a></button>
                     </li>
-                    <li>
-                        <a class="nav-link" href="https://signup.leagueoflegends.com/pt-br/signup/redownload?page_referrer=index"><p>INSTALAR</p></a>
-                    </li>
                 </ul>
         </nav>
     </header>   
     <main>
+        <section>
         <div class="span-mid">
+            <img  class="bannerCharacter" src="../img/banner-season.jpg" alt="">
+
             <span class="titulo1">ESCOLHA SEU CAMPEÃO</span>
             <img class="hr" id="hrtitulo" src="../img/decorator-hr.png" alt="">
         </div>  
+    </section>
         <nav class="navcharacters">
-            <section>
+            
             <div class="buscar">
                 <input type="text" id="searchInput" placeholder="Buscar Campeão...">
                 <button id="searchButton">BUSCAR</button>   
             </div>
-             
-            </section>
+            <select class="filtro" id="championDropdown">
+                <option value="All">Todos</option>
+                <option value="Mage">Mago</option>
+                <option value="Fighter">Lutador</option>
+                <option value="Tank">Tank</option>
+                <option value="Support">Suporte</option>
+                <option value="Marksman">Atirador</option>
+                <option value="Assassin">Assassino</option>
+
+              </select>
+            
         </nav>
     <div class="containercharacter" id="championData"></div>
     </main>

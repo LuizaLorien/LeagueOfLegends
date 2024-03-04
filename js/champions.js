@@ -29,6 +29,7 @@ fetch('https://ddragon.leagueoflegends.com/cdn/14.4.1/data/pt_BR/champion.json')
     const championContainer = document.getElementById('championData');
     championData.innerHTML = '';
     championContainer.appendChild(championList);
+    
     // Selecione o botão de pesquisa e o campo de entrada de texto
     const searchButton = document.querySelector('#searchButton');
     const searchInput = document.getElementById('searchInput');
@@ -46,3 +47,4 @@ fetch('https://ddragon.leagueoflegends.com/cdn/14.4.1/data/pt_BR/champion.json')
   .catch(error => {
     console.error('Ocorreu um erro ao carregar os dados do campeão', error);
   });
+  
