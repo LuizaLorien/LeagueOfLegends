@@ -58,12 +58,14 @@ a{
     flex-direction: column;
 }
 
-a{
+.buttonForm a{
+    color: white;
     font-weight: bold;
     font-size: 0.8rem;
 }
 
 .forgot-password{
+    width: 200px;
     text-align: center;
 }
 
@@ -94,7 +96,7 @@ input::placeholder{
     display: none;
     font-size: 0.7em;
 }   
-#buttonForm{
+.buttonForm button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +105,6 @@ input::placeholder{
     border: none;
     background: rgb(200, 156, 62);
     border-radius:5px;
-    padding: 15px 0px;
     margin: 25px 0;
     width: auto;
     text-align: center;
