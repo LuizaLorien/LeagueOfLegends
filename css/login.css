@@ -1,8 +1,22 @@
 @import url(./fonts.css);
 @import url(./navbar.css);
 
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
 header{
     background-color: rgb(6, 12, 25);
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a img.logo-img{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+
 }
 body{
     max-width: auto;
@@ -13,7 +27,92 @@ body{
     background-color: rgb(9, 20, 40);   
 }
 a{
+    font-family: "BeaufortforLOL-MediumItalic";
     text-decoration: none;
-    color: white;
+    color: rgb(200, 156, 62);
     cursor: url('../img/cursor-pointer.png'), auto;
+}
+
+.container{
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 40px;
+    padding: 50px 40px;
+    width: 310px;
+    height: 400px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content{
+    display:flex;
+    flex-direction: column;
+}
+
+.form-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.forgot-password{
+    text-align: center;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 85%;
+    outline: none;
+    padding: 5px 20px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input::placeholder{
+    color: var(--White);
+    text-align: left;
+}
+
+.input-box label{
+    left: 0;
+    bottom: 55px;
+    font-size: 0.8em;
+    transition: ease-in-out 0.3s;
+}
+.message {
+    display: none;
+    font-size: 0.7em;
+}   
+#buttonForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    background: rgb(200, 156, 62);
+    border-radius:5px;
+    padding: 15px 0px;
+    margin: 25px 0;
+    width: auto;
+    text-align: center;
+}
+
+@media (max-width: 500px){
+    .container{
+        align-self: flex-end;
+        height: 75svh;
+        width: 100vw;
+    }
 }
