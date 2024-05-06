@@ -14,7 +14,8 @@ body{
     font-family: "Beaufort for LOL";
     font-style: bold;
     cursor: url('../img/cursor.png'), auto;
-    background-color: rgb(9, 20, 40);   
+    background-color: rgb(9, 20, 40);  
+    overflow: hidden; 
 }
 ::-webkit-scrollbar{
     scroll-behavior: smooth;
